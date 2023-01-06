@@ -1,0 +1,91 @@
+import Head from "next/head";
+import React from "react";
+import Image from "next/image";
+import { Charm } from "@next/font/google";
+import { useEffect, useRef } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
+
+const font = Charm({ subsets: ["latin"], weight: ["400"] });
+
+export default function Home() {
+    const router = useRouter();
+
+    useEffect(() => {
+        setTimeout(setVisible, 2000);
+    }, []);
+
+    const setVisible = () => {
+        const ele = document.getElementById("wish");
+        ele.classList.remove("hidden");
+        const ele1 = document.getElementById("sen");
+        ele1.classList.remove("hidden");
+    };
+
+    const Unmute = () => {
+        const ele = document.getElementById("vid");
+        ele.muted = !ele.muted;
+    };
+
+    return (
+        <>
+            <Head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <link rel="canonical" href={router.asPath}></link>
+                <link href="https://newyearwishes.vercel.app/bg.jpg" rel="icon shortcut" type="image/x-icon"></link>
+                <link rel="apple-touch-icon" href="https://newyearwishes.vercel.app/bg.jpg"></link>
+                <link rel="icon" href="https://newyearwishes.vercel.app/bg.jpg" />
+                <title>Happy New Year! - {router.query.t == null || router.query.t == undefined ? "" : router.query.t}</title>
+                {/* Google */}
+                <meta name="title" content={`Happy New Year! - ${router.query.t == null || router.query.t == undefined ? "" : router.query.t}`} />
+                <meta name="description" content={`New Year Wishes From '${router.query.f == null || router.query.f == undefined ? "" : router.query.f}'.`} />
+                <meta name="keywords" content="DulaYapa, Dulanka Yapa, Happy new year" />
+
+                {/* Facebook */}
+                <meta property="og:type" content={"website"} />
+                <meta property="og:site_name" content="DulaYapa"></meta>
+                <meta property="og:url" content={router.asPath} />
+                <meta property="og:title" content={`Happy New Year! - ${router.query.t == null || router.query.t == undefined ? "" : router.query.t}`} />
+                <meta property="og:description" content={`New Year Wishes From '${router.query.f == null || router.query.f == undefined ? "" : router.query.f}'.`} />
+                <meta property="og:image" content="https://newyearwishes.vercel.app/bg.jpg" />
+                <meta property="og:image:width" content={500}></meta>
+                <meta property="og:image:height" content={291}></meta>
+                <meta property="og:locale" content="en_US" />
+
+                {/* Twitter */}
+                <meta property="article:publisher" content="https://twitter.com/dulankayapa"></meta>
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:site" content="@dulankayapa" />
+                <meta name="twitter:title" content={`Happy New Year! - ${router.query.t}`} />
+                <meta name="twitter:description" content={`New Year Wishes From '${router.query.f == null || router.query.f == undefined ? "" : router.query.f}'.`} />
+                <meta name="twitter:image" content="https://newyearwishes.vercel.app/bg.jpg" />
+                <meta name="twitter:image:alt" content={`New Year Wishes From '${router.query.f == null || router.query.f == undefined ? "" : router.query.f}'.`} />
+            </Head>
+            <div className={`w-screen h-screen flex items-center justify-center ${font.className} bg-[url('/bg.png')] bg-no-repeat bg-cover`}>
+                {!router.query.preview && (
+                    <div className="absolute left-5 top-5 z-50">
+                        <Link
+                            href="/create"
+                            className="inline-flex z-50 w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
+                        >
+                            <span class="sr-only">Create Link</span>
+                            Create Wish
+                        </Link>
+                    </div>
+                )}
+                <div className="absolute right-5 top-5 z-50">
+                    <button
+                        onClick={Unmute}
+                        className="inline-flex z-50 w-full justify-center rounded-md border border-gray-300 bg-white py-2 px-4 text-sm font-medium text-gray-500 shadow-sm hover:bg-gray-50"
+                    >
+                        <span class="sr-only">Unmute</span>
+                        Un/mute
+                    </button>
+                </div>
+                <div className="w-full h-full aspect-video relative">
+                    <h1 className="absolute hidden h-56 w-full text-[2.5rem] md:text-7xl lg:text-8xl mt-24 md:mt-28 lg:mt-16 text-center linear-wipe" id="wish">
+                    <h1 className="absolute hidden h-56 w-full text-[1.9rem] md:text-7xl lg:text-8xl mt-24 md:mt-28 lg:mt-16 text-center linear-wipe" id="wish">
+                        {router.query.g || "Happy New Year!"}
+                    </h1>
+                    <video src="./video.m4v" id="vid" autoPlay={true} loop muted playsInline="true" className="w-full h-full aspect-video"></video>
