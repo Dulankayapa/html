@@ -3,23 +3,34 @@
 
 <head>
     <title>DC creat</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <style>
         body {
             background-image: url('Screenshot 2022-12-26 170454.png');
             background-size: 100% 100%;
         }
 
-        .imgbox {
+        .imgbox-container {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
             flex-direction: row;
             margin-top: 50px;
         }
+        .imgbox{
+            display : flex;
+            justify-content: left;
+             justify-items:left ; 
+             flex-direction: column ; 
+             margin: 30px;
+        }
 
         @media only screen and (max-width: 600px) {
-            .imgbox {
+            .imgbox-container {
                 flex-direction: column;
+            }
+            .imgbox{
+                margin:5px;
             }
         }
     </style>
@@ -82,37 +93,48 @@
 
 
 
-    <div class="imgbox">
-        <div style="display : flex;justify-content: left; justify-items:left ;  flex-direction: column ; margin: 30px;">
+    <div class="imgbox-container">
+        <div class="imgbox">
             <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_zVTReFdxX1zEX-CDJiWSY">DC
                 Creation</a>
             <img src="dulaart.jpg"
                  style=" width: 250px; margin-top: 10px;">
         </div>
 
-        <div style="display : flex;justify-content: left; justify-items:left ; flex-direction: column ; margin: 30px; ">
-            <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9vuZKMpGW1KyMM46dqeVuw">Vlog
+        <div class="imgbox">
+            
+            <a href="https://youtube.com/playlist?list=PL5OqM2M00g--6j-isYxtEhHR2amV3pWfT">IT and Education
             </a>
             <img src="education .jpg"
                  style=" width: 250px; margin-top: 10px;">
         </div>
 
-        <div style="display : flex;justify-content: left; justify-items:left ; flex-direction: column ; margin: 30px; ">
-            <a href="https://youtube.com/playlist?list=PL5OqM2M00g--6j-isYxtEhHR2amV3pWfT">IT and Education
+        <div class="imgbox">
+            
+            <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_ehJLaBV0MiR28rCvGv41F">Review
             </a>
             <img src="review.jpg"
                  alt="review"
                  style=" width: 250px; margin-top: 10px;">
         </div>
 
-        <div style="display : flex;justify-content: left; justify-items:left ; flex-direction: column ; margin: 30px; ">
+        <div class="imgbox" >
             <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9ViNT23K9x7ufIBFJ7mtoY">Nature
+            </a>
+            <img src="nature.jpg"
+                 alt="nature"
+                 style=" width: 250px; margin-top: 10px;">
+
+        </div>
+        <div class="imgbox" >
+            <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9vuZKMpGW1KyMM46dqeVuw">Vlog
             </a>
             <img src="vlog.jpg"
                  alt="vlog"
                  style=" width: 250px; margin-top: 10px;">
 
         </div>
+
     </div>
 
 </body>
