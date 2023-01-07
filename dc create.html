@@ -4,10 +4,31 @@
 <head>
     <title>DC creat</title>
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira">
     <style>
         body {
-            background-image: url('Screenshot 2022-12-26 170454.png');
-            background-size: 100% 100%;
+            font-family: "Saira", sans-serif;
+
+            background-image: url('background.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            width:100vw; height:100vh;
+        }
+        main {
+            overflow-y: scroll; overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a,
+        p {
+            text-shadow: 2px 2px 3px #1b1b1b;
+            color: rgb(15, 15, 15);
         }
 
         .imgbox-container {
@@ -17,20 +38,40 @@
             flex-direction: row;
             margin-top: 50px;
         }
-        .imgbox{
-            display : flex;
+
+        .imgbox {
+            display: flex;
             justify-content: left;
-             justify-items:left ; 
-             flex-direction: column ; 
-             margin: 30px;
+            justify-items: left;
+            flex-direction: column;
+            margin: 30px;
+        }
+
+        .imgbox img {
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        .imgbox a {
+            font-size: 25px;
         }
 
         @media only screen and (max-width: 600px) {
             .imgbox-container {
                 flex-direction: column;
+
             }
-            .imgbox{
-                margin:5px;
+
+            .imgbox img {
+                width: 300px;
+            }
+
+            .imgbox {
+                margin: 5px;
+            }
+
+            .imgbox a {
+                font-size: 20px;
             }
         }
     </style>
@@ -39,37 +80,37 @@
 
 <body>
 
-    <div
-         style="text-transform:capitalize; display:flex; justify-content: center; font-size: 50px; color:rgb(162, 98, 221);">
-        dc design
-    </div>
+    <main>
+        <h1
+            style="text-transform:capitalize; display:flex; justify-content: center; font-size: 50px; color:rgb(162, 98, 221);">
+            dc design
+        </h1>
 
-    <div style="text-transform:capitalize;">
-        <div style="display:flex; justify-content: center;">
-            <h2 style="color:rgb(148, 37, 148);">
-                DC creat art web site.
-            </h2>
+        <div style="text-transform:capitalize;">
+            <div style="display:flex; justify-content: center;">
+                <h2>
+                    DC creat art web site.
+                </h2>
+            </div>
+            <br />
+            <div style="display:flex; justify-content: center;">
+                <h2>Click below link and join with dula yapa channel.
+                    <span style="font-size:50px"> &#9196
+                </h2>
+            </div>
         </div>
-        <br />
-        <div style="display:flex; justify-content: center;">
-            <h2 style="color:rgb(228, 106, 106);">Click below link and join with dula yapa channel.
-                <span style="font-size:50px"> &#9196
-            </h2>
-        </div>
-    </div>
 
 
-    <h1 style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1 style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
 
-        <span style="font-size:25px"> &#10055 &#10055 &#10055</span>
-        <a href="https://www.youtube.com/c/Dulayapa">dulayapa you tube</a>
-        <span style="font-size:25px"> &#10055 &#10055 &#10055</span>
+            <span style="font-size:25px"> &#10055 &#10055 &#10055</span>
+            <a href="https://www.youtube.com/c/Dulayapa">dulayapa you tube</a>
+            <span style="font-size:25px"> &#10055 &#10055 &#10055</span>
 
-        <img src="Screenshot 2022-12-26 134508.png"
-             style="width: 500px; margin-top: 20px; margin-bottom: 20px;" />
-    </h1>
+            <img src="Screenshot 2022-12-26 134508.png" style="width: 500px; margin-top: 20px; margin-bottom: 20px;" />
+        </h1>
 
-    <!-- <div style="display: inline-block; position: relative; margin:0px 10px ">
+        <!-- <div style="display: inline-block; position: relative; margin:0px 10px ">
         <span style="position:absolute; font-size: 25px;width: 100%;text-align: left;">
 
         </span>
@@ -93,50 +134,42 @@
 
 
 
-    <div class="imgbox-container">
-        <div class="imgbox">
-            <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_zVTReFdxX1zEX-CDJiWSY">DC
-                Creation</a>
-            <img src="dulaart.jpg"
-                 style=" width: 250px; margin-top: 10px;">
-        </div>
+        <div class="imgbox-container">
+            <div class="imgbox">
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_zVTReFdxX1zEX-CDJiWSY">DC
+                    Creation</a>
+                <img src="dulaart.jpg">
+            </div>
 
-        <div class="imgbox">
-            
-            <a href="https://youtube.com/playlist?list=PL5OqM2M00g--6j-isYxtEhHR2amV3pWfT">IT and Education
-            </a>
-            <img src="education .jpg"
-                 style=" width: 250px; margin-top: 10px;">
-        </div>
+            <div class="imgbox">
 
-        <div class="imgbox">
-            
-            <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_ehJLaBV0MiR28rCvGv41F">Review
-            </a>
-            <img src="review.jpg"
-                 alt="review"
-                 style=" width: 250px; margin-top: 10px;">
-        </div>
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g--6j-isYxtEhHR2amV3pWfT">IT and Education
+                </a>
+                <img src="education .jpg" style=" width: 250px; margin-top: 10px;">
+            </div>
 
-        <div class="imgbox" >
-            <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9ViNT23K9x7ufIBFJ7mtoY">Nature
-            </a>
-            <img src="nature.jpg"
-                 alt="nature"
-                 style=" width: 250px; margin-top: 10px;">
+            <div class="imgbox">
 
-        </div>
-        <div class="imgbox" >
-            <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9vuZKMpGW1KyMM46dqeVuw">Vlog
-            </a>
-            <img src="vlog.jpg"
-                 alt="vlog"
-                 style=" width: 250px; margin-top: 10px;">
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_ehJLaBV0MiR28rCvGv41F">Review
+                </a>
+                <img src="review.jpg" alt="review">
+            </div>
+
+            <div class="imgbox">
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9ViNT23K9x7ufIBFJ7mtoY">Nature
+                </a>
+                <img src="nature.jpg" alt="nature">
+
+            </div>
+            <div class="imgbox">
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9vuZKMpGW1KyMM46dqeVuw">Vlog
+                </a>
+                <img src="vlog.jpg" alt="vlog">
+
+            </div>
 
         </div>
-
-    </div>
-
+    </main>
 </body>
 
 </html>
