@@ -3,9 +3,155 @@
 
 <head>
     <title>DC create</title>
+    <style>
+        body {
+            font-family: "Lobster", sans-serif;
+
+            background-image: url('pink background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+
+        }
+
+        ::-webkit-scrollbar {
+            width: 1em;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(124, 19, 98, 0.534);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(194, 78, 155);
+            border-radius: 8px;
+            outline: 1px solid rgb(0, 0, 0);
+        }
+
+
+        .shadow {
+            text-shadow: 3px 2px 1px #030303;
+        }
+
+        .imgbox-container {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 50px;
+            width: 100%;
+            overflow-x: scroll;
+        }
+
+        .imgbox {
+            display: flex;
+            justify-content: left;
+            justify-items: left;
+            flex-direction: column;
+            margin: 30px;
+            background-color: #e2d1d1;
+            border-radius: 7px;
+            box-shadow: 2px 2px 3px #1b1b1b;
+            padding: 8px;
+        }
+
+        .imgbox:hover {
+            transform: scale(1.1);
+
+            transition: transform 1s;
+
+        }
+
+        .imgbox img {
+            width: 250px;
+            margin-top: 10px;
+            border-radius: 7px;
+            max-height: 250px;
+        }
+
+        .imgbox a {
+            font-size: 25px;
+            color: #300021;
+            text-decoration: none;
+        }
+
+        .imgbox:hover a {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .imgbox-container {
+                flex-direction: column;
+
+            }
+
+            .imgbox img {
+                width: 300px;
+            }
+
+            .imgbox {
+                margin: 5px;
+            }
+
+            .imgbox a {
+                font-size: 20px;
+            }
+        }
+
+        .bounce {
+            animation: bounce 2s ease infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+
+
+        }
+
+        .fade-in {
+            animation: fade-in 6s linear infinite;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            33% {
+                opacity: 1;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
-<body style="margin: 0px; padding: 0px; height: 100vh; width:100vw ;">
+<body>
     <div style="height: 100vh; width:100vw ;display: flex;flex-direction: column;">
         <div>
             <h1 style="text-align: center;">Dc create</h1>
@@ -13,7 +159,7 @@
         <div style="display: flex; flex-direction: row;">
             <div style="width:50%; text-align: center;">
                 <h2 style="margin-top: 0; "> Welcome to DC create art web site!</h2>
-                <img src="welcome hands1.png " style="width:60%; margin-left:20%;" />
+                <img src="welcome hands1.png " style="width:60%; margin: 0px auto;" />
                 <h3> Click below link and join with dula yapa channel.<br>&#9196 </h3>
                 <a style="width: 100%;display: block;" href="https://www.youtube.com/c/Dulayapa"><span
                         style="padding-right:  10px; ;">&#10055 &#10055 &#10055</span> Dulayapa you tube<span
@@ -25,6 +171,46 @@
 
         </div>
 
+    </div>
+    <div style="height: 100vh; width:100vw ;display: flex;flex-direction: column;">
+        <div>
+            <h2 style="text-align: center;">.... Click below links to open channel Play Lists ....</h2>
+        </div>
+        <div class="imgbox-container">
+            <div class="imgbox">
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_zVTReFdxX1zEX-CDJiWSY">DC
+                    Creation</a>
+                <img src="dulaart.jpg">
+            </div>
+
+            <div class="imgbox">
+
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g--6j-isYxtEhHR2amV3pWfT">IT and Education
+                </a>
+                <img src="education .jpg">
+            </div>
+
+            <div class="imgbox">
+
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_ehJLaBV0MiR28rCvGv41F">Review
+                </a>
+                <img src="review.jpg" alt="review">
+            </div>
+
+            <div class="imgbox">
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9ViNT23K9x7ufIBFJ7mtoY">Nature
+                </a>
+                <img src="nature.jpg" alt="nature">
+
+            </div>
+            <div class="imgbox">
+                <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9vuZKMpGW1KyMM46dqeVuw">Vlog
+                </a>
+                <img src="vlog.jpg" alt="vlog">
+
+            </div>
+
+        </div>
     </div>
 
 
