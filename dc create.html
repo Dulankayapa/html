@@ -3,8 +3,10 @@
 
 <head>
     <title>DC create</title>
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <meta name="viewport"
+          content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lobster">
     <style>
         body {
             font-family: "Lobster", sans-serif;
@@ -113,23 +115,18 @@
             width: 20px;
         } */
 
-        @media only screen and (max-width: 600px) {
-            .imgbox-container {
-                flex-direction: column;
+        .mainsection {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
 
-            }
+        .subsection {
+            width: 50%;
+        }
 
-            .imgbox img {
-                width: 300px;
-            }
-
-            .imgbox {
-                margin: 5px;
-            }
-
-            .imgbox a {
-                font-size: 20px;
-            }
+        .subsection-txt-container {
+            width: 80%;
         }
 
         .bounce {
@@ -269,12 +266,49 @@
             }
         }
 
-        .anc a {
+        .anc {
             text-decoration: none;
         }
 
-        .anc:hover a {
+        .anc:hover {
             text-decoration: underline;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            .imgbox-container {
+                flex-direction: column;
+
+            }
+
+            .imgbox img {
+                width: 300px;
+            }
+
+            .imgbox {
+                margin: 5px;
+            }
+
+            .imgbox a {
+                font-size: 20px;
+            }
+
+            .mainsection {
+
+                flex-direction: column;
+            }
+
+            .subsection {
+                width: 100%;
+            }
+
+            .drop-main {
+                font-size: 4rem
+            }
+
+            .subsection-txt-container {
+                width: 90%;
+            }
         }
     </style>
 
@@ -287,7 +321,8 @@
         <div style="aspect-ratio: 16/9; width: 100vw; overflow-y: visible;">
             <div class="drop-main">
                 <div class="a">D</div>
-                <div style="padding-right:50px;" class="b">C </div>
+                <div style="padding-right:50px;"
+                     class="b">C </div>
                 <div class="c">C</div>
                 <div class="d">r</div>
                 <div class="e">e</div>
@@ -302,59 +337,62 @@
             style="text-transform:capitalize; display:flex; justify-content: center; font-size: 50px; color:rgb(183, 152, 184);">
             DC Creation
         </h1> -->
-            <div style="display: flex; flex-direction: row; width: 100%;">
-                <div style="width: 50%; position: relative; text-transform:capitalize; display: flex; flex-direction: column; justify-content: center;" class="shadow">
-                    <div style="width: 80%;   display: flex;
+            <div class="mainsection">
+                <div class="subsection"
+                     style="position: relative; text-transform:capitalize; display: flex; flex-direction: column; justify-content: center;"
+                     class="shadow">
+                    <div class="subsection-txt-container"
+                         style=" display: flex;
                          align-items: center;
                          justify-content: center;
-                         height: 100%;flex-direction: column; ">
+                         height: 100%;flex-direction: column; margin-left: auto; margin-right: auto;">
                         <div
-                            style="display:flex; flex-direction:column-reverse ; justify-content:center; padding-left: 10% ;font-size: 200%;">
+                             style="display:flex; flex-direction:column-reverse ; justify-content:center; font-size: 200%; ">
                             <div style="text-align: center;">
                                 Welcome to DC create art web site!
                             </div>
-                            <div>
+                            <div style="display: flex; justify-content: center;">
                                 <img src="welcome hands1.png"
-                                    style="width: 50%; padding-bottom:10%; padding-left: 20%;  " />
+                                     style="width: 50%; padding-bottom:10%; " />
 
                             </div>
                         </div>
                         <br>
                         <div class="bounce"
-                            style="display:flex; justify-content: center;font-size:25px ; flex-direction: column;text-align:center;margin-left:5% ;margin-top:50px ;">
+                             style="display:flex; justify-content: center;font-size:25px ; flex-direction: column;text-align:center;margin-top:50px ;">
                             Click below link and join with dula yapa channel.<br>
-                            <h2 style="padding-left:10%;font-size:45px; width:100% ; "> &#9196 </h2>
-
-
+                            <h2 style="font-size:45px; width:100% ; "> &#9196 </h2>
                         </div>
+
+                        <h1 class="shadow"
+                            style="display: flex; justify-items: center; align-items:center;text-align: center; flex-direction: row; font-size: 35px; color: #b799cf; margin-top: 0px;">
+
+                            <span style="font-size:15px; padding-right:10px ;">
+                                &#10055 &#10055 &#10055</span>
+
+                            <a class="anc"
+                               href="https://www.youtube.com/c/Dulayapa">Dulayapa youtube</a>
+
+                            <span style="font-size:15px;padding-left:10px ; "> &#10055 &#10055 &#10055</span>
+                        </h1>
                     </div>
-
-                  
-                    <h1 class="shadow"
-                        style="display: flex; justify-items: center; align-items:center;text-align: justify; flex-direction: row; font-size: 35px; color: #b799cf; margin-top: 0px;">
-
-                        <span style="font-size:15px; padding-right:10px ; margin-left: 35px;padding-left: 15px;"> &#10055 &#10055 &#10055</span>
-                        <div class="anc">
-                            <a href="https://www.youtube.com/c/Dulayapa">Dulayapa youtube</a>
-                        </div>
-                        <span style="font-size:15px;padding-left:10px ; "> &#10055 &#10055 &#10055</span>
-                    </h1>
-
-
                 </div>
-                <div style="width: 50%; position: relative; flex-direction: column;" class="fade-in">
+                <div class="subsection"
+                     style=" position: relative; flex-direction: column;"
+                     class="fade-in">
 
                     <img src="Screenshot 2022-12-26 134508.png"
-                        style="width:95%; border-radius: 15px;margin-right: 10%; margin-top: 25%; border-radius: 25px; " />
+                         style="width:95%; border-radius: 15px; margin-top: 25%; border-radius: 25px; " />
                 </div>
             </div>
 
             <div>
-            <div class="bounce" class="shadow"
-                style="position: relative;text-transform: capitalize;text-align: center;font-size:35px; margin-top:20%;">
-                .... Click below links to open channel Play Lists ....<br>
-                <span style=" padding:15px;">&#8601 &#11015 &#8600</span>
-            </div>
+                <div class="bounce"
+                     class="shadow"
+                     style="position: relative;text-transform: capitalize;text-align: center;font-size:35px; margin-top:15%;">
+                    .... Click below links to open channel Play Lists ....<br>
+                    <span style=" padding:15px;">&#8601 &#11015 &#8600</span>
+                </div>
             </div>
             <div class="imgbox-container">
                 <div class="imgbox">
@@ -375,19 +413,22 @@
 
                     <a href="https://youtube.com/playlist?list=PL5OqM2M00g-_ehJLaBV0MiR28rCvGv41F">Review
                     </a>
-                    <img src="review.jpg" alt="review">
+                    <img src="review.jpg"
+                         alt="review">
                 </div>
 
                 <div class="imgbox">
                     <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9ViNT23K9x7ufIBFJ7mtoY">Nature
                     </a>
-                    <img src="nature.jpg" alt="nature">
+                    <img src="nature.jpg"
+                         alt="nature">
 
                 </div>
                 <div class="imgbox">
                     <a href="https://youtube.com/playlist?list=PL5OqM2M00g-9vuZKMpGW1KyMM46dqeVuw">Vlog
                     </a>
-                    <img src="vlog.jpg" alt="vlog">
+                    <img src="vlog.jpg"
+                         alt="vlog">
 
                 </div>
 
